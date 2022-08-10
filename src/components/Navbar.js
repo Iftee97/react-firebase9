@@ -19,7 +19,7 @@ function Navbar() {
         )}
         {user && (
           <>
-            <li>user: <strong>{user.email}</strong></li>
+            <li><strong>{user.email}</strong></li>
             <li onClick={logout}>Logout</li>
           </>
         )}
