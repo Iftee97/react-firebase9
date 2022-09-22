@@ -5,7 +5,7 @@ import { useAuthContext } from '../hooks/useAuthContext'
 import BookList from '../components/BookList'
 import BookForm from '../components/BookForm'
 
-function Home() {
+const Home = () => {
   const { user } = useAuthContext()
 
   const { documents: books } = useCollection(

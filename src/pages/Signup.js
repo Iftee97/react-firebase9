@@ -1,17 +1,17 @@
 import { useState } from 'react'
 import { useSignup } from '../hooks/useSignup'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
-function Signup() {
+const Signup = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const { error, signup } = useSignup()
-  const history = useHistory()
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault()
     signup(email, password)
-    history.push('/') // redirect to home page
+    navigate('/') // redirect to home page
   }
 
   return (

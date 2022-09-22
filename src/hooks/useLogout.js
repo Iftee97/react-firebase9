@@ -15,5 +15,7 @@ export const useLogout = () => {
       .catch((error) => console.log(error.message))
   }
 
-  return { logout }
+  return {
+    logout
+  }
 }

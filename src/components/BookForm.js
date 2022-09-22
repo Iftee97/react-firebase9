@@ -5,7 +5,7 @@ import { useAuthContext } from '../hooks/useAuthContext'
 import { db } from '../firebase/config'
 import { collection, addDoc } from 'firebase/firestore'
 
-function BookForm() {
+const BookForm = () => {
   const [newBook, setNewBook] = useState('')
   const { user } = useAuthContext()
 

@@ -32,7 +32,9 @@ export const useCollection = (c, _q) => {
     }
   }, [c, q])
 
-  return { documents }
+  return {
+    documents
+  }
 }
 
 // this custom component is used to fetch real-time data from firestore database

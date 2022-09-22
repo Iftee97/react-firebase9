@@ -13,13 +13,19 @@ function Navbar() {
         {/* <li><Link to="/">Home</Link></li> */}
         {!user && (
           <>
-            <li><Link to="/login">Login</Link></li>
-            <li><Link to="/signup">Signup</Link></li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/signup">Signup</Link>
+            </li>
           </>
         )}
         {user && (
           <>
-            <li><strong>{user.email}</strong></li>
+            <li>
+              <strong>{user.email}</strong>
+            </li>
             <li onClick={logout}>Logout</li>
           </>
         )}

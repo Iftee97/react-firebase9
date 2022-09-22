@@ -13,11 +13,13 @@ export const useLogin = () => {
     setError(null)
     signInWithEmailAndPassword(auth, email, password)
       .then((res) => {
-        // DISPATCH LOGIN ACTION
         dispatch({ type: 'LOGIN', payload: res.user })
       })
       .catch((error) => setError(error.message))
   }
 
-  return { error, login }
+  return {
+    login,
+    error
+  }
 }

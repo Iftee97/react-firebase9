@@ -2,7 +2,7 @@
 import { db } from '../firebase/config'
 import { doc, deleteDoc } from 'firebase/firestore'
 
-function BookList({ books }) {
+const BookList = ({ books }) => {
   const handleClick = async (id) => {
     // console.log(id)
     const ref = doc(db, 'books', id)

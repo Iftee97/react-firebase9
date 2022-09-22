@@ -20,4 +20,7 @@ const db = getFirestore()
 // initialise authentication
 const auth = getAuth()
 
-export { db, auth }
+export {
+  db,
+  auth
+}
